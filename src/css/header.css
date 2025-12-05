@@ -2,6 +2,10 @@ a {
     cursor: pointer;
 }
 
+address {
+    font-style: normal;
+}
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -37,19 +41,19 @@ a {
     color: #030a06;
 }
 
-.header-nav-list-link:hover, .header-nav-list-link:focus {
-
-}
-
-.header-nav-list-link.active::after {
+.header-nav-list-item:hover, .header-nav-list-item:focus {
     content: "";
     width: 100%;
     position: absolute;
     left: 0;
     bottom: -1px;
     height: 4px;
-    background-color: #404bbf;
+    color: #3ac04c;
     border-radius: 2px;
+}
+
+.header-nav-list-item.active::after {
+
 }
 
 .header-address-list-item {
