@@ -1,76 +1,86 @@
 <section class="page-support">
-    <div class="container support-container">
-        <div class="support-form-div support-div">
-            <h2 class="support-header">Залишились питання?<br>Зв'яжіться з нами!</h2> 
-            <h3 class="support-subheader">Ми тут, щоб допомогти!</h3>
-            <form class="support-form">
-                <div class="support-input-div">
-                    <label class="support-input-label" for="user-name">Ім'я</label>    
-                    <input
-                        class="support-input"
-                        type="text"
-                        id="user-name"
-                        name="user-name"
-                        placeholder="Іван"
-                        minlength="5"
-                        maxlength="64"
-                        required
-                    />
-                    <span class="error-message">Ім'я повинно містити від 5 до 64 символів.</span>
-                </div>
-                <div class="support-input-div">
-                    <label class="support-input-label" for="email">Електронна пошта</label>
-                    <input
-                        class="support-input"
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="hello@ecotote.com"
-                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                        required
-                    />
-                    <span class="error-message">Введіть коректну email адресу.</span>
-                </div>
-                <div class="support-form-massage">
-                    <label class="support-input-label" for="user-massage">Повідомлення</label>
-                    <textarea
-                        class="massage-textarea"
-                        id="user-massage"
-                        name="user-massage"
-                        maxlength="500"
-                        placeholder="Введіть своє повідомлення..."
-                    ></textarea>
-                    <span class="error-message">Максимум 500 символів.</span>
-                </div>
-                <button class="support-submit-btn" type="submit">Надіслати</button>
-            </form>          
+  <div class="container support-container">
+    <div class="support-form-div support-div">
+      <h2 class="support-header">
+        Залишились питання?<br />Зв'яжіться з нами!
+      </h2>
+      <h3 class="support-subheader">Ми тут, щоб допомогти!</h3>
+      <form class="support-form">
+        <div class="support-input-div">
+          <label class="support-input-label" for="user-name">Ім'я</label>
+          <input
+            class="support-input"
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Іван"
+            minlength="5"
+            maxlength="64"
+            required
+          />
+          <span class="error-message"
+            >Ім'я повинно містити від 5 до 64 символів.</span
+          >
         </div>
-        <div class="support-img support-div"></div>
+        <div class="support-input-div">
+          <label class="support-input-label" for="email"
+            >Електронна пошта</label
+          >
+          <input
+            class="support-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="hello@ecotote.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            required
+          />
+          <span class="error-message">Введіть коректну email адресу.</span>
+        </div>
+        <div class="support-form-massage">
+          <label class="support-input-label" for="user-massage"
+            >Повідомлення</label
+          >
+          <textarea
+            class="massage-textarea"
+            id="user-massage"
+            name="user-massage"
+            maxlength="500"
+            placeholder="Введіть своє повідомлення..."
+          ></textarea>
+          <span class="error-message">Максимум 500 символів.</span>
+        </div>
+        <button class="support-submit-btn" type="submit">Надіслати</button>
+      </form>
     </div>
+    <div class="support-img support-div"></div>
+  </div>
 </section>
 
 <script>
-    document.querySelectorAll('.support-input, .massage-textarea').forEach(field => {
-        field.addEventListener('input', () => {
-            const errorMessage = field.nextElementSibling;
+  document
+    .querySelectorAll('.support-input, .massage-textarea')
+    .forEach(field => {
+      field.addEventListener('input', () => {
+        const errorMessage = field.nextElementSibling;
 
-            let isValid = field.checkValidity();
+        let isValid = field.checkValidity();
 
-            const pattern = field.getAttribute('pattern');
-            if (pattern && field.value !== '') {
-                const regex = new RegExp(pattern);
-                if (!regex.test(field.value)) {
-                    isValid = false; 
-                }
-            }
+        const pattern = field.getAttribute('pattern');
+        if (pattern && field.value !== '') {
+          const regex = new RegExp(pattern);
+          if (!regex.test(field.value)) {
+            isValid = false;
+          }
+        }
 
-            if (isValid) {
-                field.classList.remove('error');
-                errorMessage.classList.remove('active');
-            } else {
-                field.classList.add('error');
-                errorMessage.classList.add('active');
-            }
-        });
+        if (isValid) {
+          field.classList.remove('error');
+          errorMessage.classList.remove('active');
+        } else {
+          field.classList.add('error');
+          errorMessage.classList.add('active');
+        }
+      });
     });
 </script>
