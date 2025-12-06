@@ -1,12 +1,8 @@
-.gallery-container {
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
 .gallery-section {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-color: #EBF8ED;
 }
 
 .gallery-title {
@@ -16,7 +12,6 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  padding: 16px;
   margin-top: 32px;
   color: #030A06;
 }
@@ -35,7 +30,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 16px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .gallery-item {
@@ -75,14 +71,22 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .gallery-title {
+    margin-top: 64px;
+    padding: 32px;
+  }
+
   .gallery-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 340px;
-    gap: 20px;
     max-width: 768px;
     margin: 0 auto;
     margin-top: 32px;
+    column-gap: 26px;
+    row-gap: 24px;
+    margin-bottom: 64px;
   }
 
   .gallery-item {
@@ -106,12 +110,7 @@
 
 @media screen and (min-width: 1440px) {
   .gallery-title {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  text-align: center;
-  color: #030a06;
+    margin-top: 64px;
   }
 
   .gallery-text {
@@ -119,12 +118,12 @@ font-weight: 400;
 font-size: 18px;
 line-height: 1.6;
 text-align: center;
+margin-top: 24px;
 color: #030a06;
   }
 
   .gallery-list {
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 240px;
-    margin-top: 32px;
+    row-gap: 23.17px;
   }
 }
