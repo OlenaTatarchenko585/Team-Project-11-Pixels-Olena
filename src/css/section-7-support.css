@@ -56,7 +56,7 @@
     background-color: rgba(3, 10, 6, 0.05);
     border-radius: 6px;
     line-height: 1.6;
-    padding: 8px 12px;
+    padding: 12px;
     resize: none;
     outline: none;
 }
@@ -127,7 +127,6 @@
   .support-img{ 
     background-image:
         url("../img/section-support-img/support-img-2x.jpg");
-    background-size: cover;
   }
 }
 
@@ -135,11 +134,7 @@
     .support-container {
         padding: 64px 32px;
     }
-
-    .massage-textarea {
-        padding: 12px;
-    }
-
+    
     .support-submit-btn {
         width: 249px;
     }
