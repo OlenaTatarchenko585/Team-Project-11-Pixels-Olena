@@ -1,0 +1,115 @@
+/* styles for mobile */
+.advantages {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+.advantages-title {
+    font-family: "Fira Sans", sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #030A06;
+}
+.advantages-tagline {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+.advantages-heading {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+}
+.advantages-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.advantages-list {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.advantages-image {
+    width: 100%;
+}
+.advantages-card {
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 8px;
+}
+.advantages-card-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+}
+.advantages-card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+/* styles for tablet*/
+@media (min-width: 768px) {
+    .advantages {
+        max-width: 768px;
+        padding: 64px 32px;
+    }
+    .advantages-tagline {
+        margin-bottom: 16px;
+    }
+    .advantages-heading {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+    .advantages-text {
+        font-size: 18px;
+    }
+    .advantages-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .advantages-card {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .advantages-item {
+        width: calc((100% - 24px) / 2);
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* styles for desktop*/
+@media (min-width: 1440px) {
+    .advantages {
+        max-width: 1440px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    .advantages-heading {
+        font-size: 48px;
+    }
+    .advantages-text {
+        max-width: 768px;
+        margin-bottom: 80px;
+    }
+    .advantages-item {
+        width: calc((100% - 48px) / 3);
+    }
+    .advantages-card-title {
+        font-size: 32px;
+    }
+}
