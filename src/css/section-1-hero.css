@@ -54,6 +54,14 @@
  color: #030a06;
  max-width: 288px;
 }
+.hero-title::after {
+ content: ".";
+}
+@media screen and (min-width: 768px) {
+.hero-title::after {
+ content: "";
+}
+}
 @media only screen and (min-width: 768px) {
 .hero-title {
  max-width: 340px;  
