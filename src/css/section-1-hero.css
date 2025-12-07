@@ -7,20 +7,18 @@
  padding-bottom: 64px;
  display: flex;
  flex-direction: column;
- gap: 20px;
  }
 @media only screen and (min-width: 768px) {
 .hero-container {
  padding: 32px 32px 64px 32px;
  justify-content: space-between;
  align-items: center;
- gap: 24px
-   }
+ gap: 20px;   }
 }   
 @media only screen and (min-width: 1440px) {
 .hero-container {
  padding: 32px 64px 64px 64px;
- gap: 32px  }
+ }
 }
 .hero-title,
 .hero-text,
@@ -40,9 +38,13 @@
  justify-content: space-between;
  align-items: flex-start;
  width: 100%;
- gap: 32px;
+ gap: 24px;
  }   
 }
+@media only screen and (min-width: 1440px) {
+.hero-name {
+ gap: 32px; }
+  }
 .hero-title {
  font-family: "Comfortaa", sans-serif;
  font-weight: 700;
@@ -53,7 +55,7 @@
  max-width: 288px;
 }
 @media only screen and (min-width: 768px) {
- .hero-title {
+.hero-title {
  max-width: 340px;  
  width: 50%; 
  }    
@@ -113,15 +115,29 @@
  max-width: 148px; 
  margin-bottom: 0; 
  margin-left: 0;
- margin-right: auto; }
+ margin-right: auto;
+ }
 } 
+@media screen and (min-width: 1440px) {
+.hero-btn:hover,
+.hero-btn:focus {
+ opacity: 0.5; 
+}
+}
+.hero-btn:active {
+ background: #113916;
+ border: 1px solid #113916;
+ opacity: 0.6;
+}
 .hero-foto-wrapper {
- width: 100%;
+ max-width: 288px;
+ margin: 0 auto;
 } 
 @media only screen and (min-width: 768px) {
 .hero-foto-wrapper {
  max-width: 704px;
- height: auto; }
+ height: auto; 
+}
 }
 @media only screen and (min-width: 1440px) {
 .hero-foto-wrapper {
