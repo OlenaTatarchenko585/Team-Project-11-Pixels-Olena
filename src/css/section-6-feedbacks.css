@@ -47,6 +47,10 @@
     fill: #3ac04c;
 }
 
+.feedbacks-empty {
+    fill: #3ac04c;
+}
+
 .feedback {
     font-family: "Comfortaa", sans-serif;
     font-weight: 700;
