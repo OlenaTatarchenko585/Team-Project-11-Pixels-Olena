@@ -30,7 +30,6 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .gallery-item {
@@ -84,7 +83,6 @@
     margin-top: 32px;
     column-gap: 26px;
     row-gap: 24px;
-    margin-bottom: 64px;
   }
 
   .gallery-item {
