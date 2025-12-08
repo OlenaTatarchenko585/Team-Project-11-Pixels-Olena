@@ -1,20 +1,19 @@
-
 h2 {
-  font-family: "Comfortaa" sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.01em;
 }
 
 body {
-  font-family: "Fira Sans" sans-serif;
+  font-family: "Fira Sans", sans-serif;
   color: #030a06;
+  background-color: #EBF8ED;
 }
 
 .container {
-  min-width: 320px;
-  max-width: 375px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -30,5 +29,9 @@ body {
   .container {
     max-width: 1440px;
     padding: 0 64px;
+  }
+
+  h2 {
+    font-size: 48px;
   }
 }
