@@ -28,8 +28,6 @@
     justify-content: center;
     flex-direction: row;
     gap: 40px;
-    width: 288px;
-    height: 736px;
 }
 
 .feedbacks-card {
@@ -90,8 +88,6 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: row;
-        width: 704px;
-        height: 368px;
    }
 
    .feedbacks-card {
@@ -131,7 +127,6 @@
     
     .feedbacks-container {
         gap: 24px;
-        height: 182px;
         flex-wrap: nowrap;
     }
     
