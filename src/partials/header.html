@@ -44,7 +44,7 @@
       </ul>
     </address>
 
-    <button class="burger-button" type="button">
+    <button class="burger-button" type="button" data-burger-open>
       <svg class="burger-icon" width="24" height="24">
         <use href="./img/sprite.svg#icon-burger"></use>
       </svg>
@@ -53,7 +53,7 @@
 
   <!-- mobile-menu -->
 
-  <div class="mobile-menu">
+  <div class="mobile-menu" data-burger>
     <div class="mobile-menu-header">
       <a class="header-nav-icon" href="../index.html">
         <svg class="nav-icon" width="84" height="36">
@@ -61,7 +61,7 @@
         </svg>
       </a>
 
-      <button class="burger-exit-button" type="button">
+      <button class="burger-exit-button" type="button" data-burger-close>
         <svg class="burger-exit-icon" width="32" height="32">
           <use href="./img/sprite.svg#icon-close"></use>
         </svg>
@@ -71,22 +71,34 @@
     <div class="mobile-menu-nav">
       <ul class="mobile-header-nav-list">
         <li class="mobile-header-nav-list-item">
-          <a href="#about-id" class="header-nav-list-link">Про нас</a>
+          <a href="#about-id" class="header-nav-list-link navigation"
+            >Про нас</a
+          >
         </li>
         <li class="mobile-header-nav-list-item">
-          <a href="#advantages-id" class="header-nav-list-link">Переваги</a>
+          <a href="#advantages-id" class="header-nav-list-link navigation"
+            >Переваги</a
+          >
         </li>
         <li class="mobile-header-nav-list-item">
-          <a href="#assortment-id" class="header-nav-list-link">Асортимент</a>
+          <a href="#assortment-id" class="header-nav-list-link navigation"
+            >Асортимент</a
+          >
         </li>
         <li class="mobile-header-nav-list-item">
-          <a href="#gallery-id" class="header-nav-list-link">Галерея</a>
+          <a href="#gallery-id" class="header-nav-list-link navigation"
+            >Галерея</a
+          >
         </li>
         <li class="mobile-header-nav-list-item">
-          <a href="#feedbacks-id" class="header-nav-list-link">Відгуки</a>
+          <a href="#feedbacks-id" class="header-nav-list-link navigation"
+            >Відгуки</a
+          >
         </li>
         <li class="mobile-header-nav-list-item">
-          <a href="#support-id" class="header-nav-list-link">Контакти</a>
+          <a href="#support-id" class="header-nav-list-link navigation"
+            >Контакти</a
+          >
         </li>
       </ul>
 
