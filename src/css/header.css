@@ -215,6 +215,10 @@ address {
     color: #030a06;
 }
 
+.mobile-header-nav-list-item:active {
+    color: #3ac04c;
+}
+
 .mobile-header-address-container {
     display: flex;
     flex-direction: column;
