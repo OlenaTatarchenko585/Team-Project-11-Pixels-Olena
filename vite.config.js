@@ -6,7 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
-    base: './',
+    base: '/Team-Project-11-Pixels/-Olena/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
