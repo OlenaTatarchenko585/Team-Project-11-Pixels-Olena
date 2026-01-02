@@ -1,5 +1,5 @@
 # Team-Project-11-Pixels
-EcoTote — Стиль, що не шкодить планеті
+EcoTote — Стиль, що не шкодить планеті.
 
 
 
