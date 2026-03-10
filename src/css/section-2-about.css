@@ -2,12 +2,13 @@
 .about-section{
   background-color: transparent;
   color: #fff;
-  background-image: linear-gradient( 
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/img/about/about-m@1x.jpg");
+  position: relative;
+  overflow: hidden;
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  min-height: 100%;
   margin: 0 auto;
   padding: 64px 16px;
 }
@@ -45,20 +46,26 @@
   text-align: center;
   color: #fff;
 }
+.about-bg {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
 
-@media screen and (min-resolution: 192dpi) {
-  .about-section{ 
-   background-image: linear-gradient( 
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/img/about/about-m@2x.jpg");
-  }
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 @media screen and (min-width: 768px){
   .about-section{
-  background-image: linear-gradient( 
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/img/about/about-t@1x.jpg");
+ 
   padding: 80px 32px;
   }
   .about-container{
@@ -81,30 +88,14 @@
   padding: 0 9px; 
   }
 }
-@media screen and (min-width: 768px) and (min-resolution: 192dpi){
-  .about-section{ 
-   background-image: linear-gradient( 
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/img/about/about-t@2x.jpg");
-  }
-}
 
 @media screen and (min-width: 1440px){
   .about-section{
-   background-image: linear-gradient( 
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/img/about/about-d@1x.jpg");
-  padding: 112px 336px 94px;
+     padding: 112px 336px 94px;
   }
   .about-subtitle{
     font-size: 56px;
   }
 }
 
-@media screen and (min-width: 1440px) and (min-resolution: 192dpi){
-  .about-section{
-   background-image: linear-gradient( 
-    rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/img/about/about-d@2x.jpg");
-  }
-}  
+

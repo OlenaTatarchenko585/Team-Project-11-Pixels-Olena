@@ -1,7 +1,33 @@
-<section class="about-section"  id="about-id">
+<section class="about-section" id="about-id">
+  <picture class="about-bg">
+    <source
+      srcset="
+        ./src/img/about/about-d@1x.jpg 1x,
+        ./src/img/about/about-d@2x.jpg 2x
+      "
+      media="(min-width: 1440px)"
+    />
+    <source
+      srcset="
+        ./src/img/about/about-t@1x.jpg 1x,
+        ./src/img/about/about-t@2x.jpg 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <img
+      src="./src/img/about/about-m@1x.jpg"
+      srcset="./src/img/about/about-m@2x.jpg 2x"
+      alt="About Us Background"
+      class="about-img"
+    />
+  </picture>
+  <div class="about-overlay"></div>
   <div class="container about-container">
     <h2 class="about-title">Природність</h2>
     <h3 class="about-subtitle">Турбота про планету</h3>
-    <p class="about-text">Ми використовуємо органічну бавовну, перероблений пластик, льон та коноплі для наших сумок.</p>
+    <p class="about-text">
+      Ми використовуємо органічну бавовну, перероблений пластик, льон та коноплі
+      для наших сумок.
+    </p>
   </div>
 </section>
